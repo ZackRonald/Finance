@@ -1,0 +1,324 @@
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32;
+    padding: 10px 20px;
+    color: white;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+}
+
+.FormHolder{
+    width: 300px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    right: 70px;
+}
+#logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#h2Opt {
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.opt h2:hover {
+    color: #c8e6c9;
+}
+
+/* Form Styles */
+#expForm {
+    background: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+#expForm label {
+    font-weight: bold;
+}
+
+#expForm select,
+#expForm input {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #388e3c;
+    border-radius: 4px;
+}
+
+/* Summary Section */
+h3 {
+    color: #1b5e20;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+
+.card {
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    height: 300px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #4caf50;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #2e7d32;
+}
+
+/* Expense Type Styling */
+.text-success {
+    color: #1b5e20 !important;
+}
+
+.text-danger {
+    color: #d32f2f !important;
+}
+
+/* Buttons */
+button {
+    background-color: #388e3c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e7d32;
+}
+
+.incomeCard {
+    position: absolute;
+    top: 120px;
+    left: 500px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.ExpenseCard{
+    position: absolute;
+    top: 120px;
+    left: 1000px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    color:black;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+.unpaidCard{
+    position: absolute;
+    top: 360px;
+    left: 750px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+#paraCard{
+    margin-left: 20px;
+}
+
+.transportCard{
+    position: absolute;
+    top: 660px;
+    left: 30px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.loanCard{
+    position: absolute;
+    top: 660px;
+    left: 430px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.billCard{
+    position: absolute;
+    top: 660px;
+    left: 790px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+.shopCard{
+    position: absolute;
+    top: 660px;
+    left: 1130px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.foodCard{
+    position: absolute;
+    top: 900px;
+    left:30px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.rentCard{
+    position: absolute;
+    top: 900px;
+    left: 430px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+.salaryCard{
+    position: absolute;
+    top: 1200px;
+    left: 30px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+.giftCard{
+    position: absolute;
+    top: 1200px;
+    left: 430px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+
+.gLoanCard{
+    position: absolute;
+    top: 1200px;
+    left: 790px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.bonusCard{
+    position: absolute;
+    top: 1200px;
+    left: 1130px;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}

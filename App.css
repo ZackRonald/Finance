@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.OuterBoxL {
+    background: linear-gradient(135deg, #1b5e20, #66bb6a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ 
+}
+#LoginBtn{
+  
+        width: 100%;
+        height: 50px;
+        background: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 15px;
+ 
+}
+.InnerBoxL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 550px;
+    background: rgba(9, 8, 8, 0.1); 
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}  
+
+.loginRight{
+    width: 450px;
+    height: 550px;
+   border: 2px solid rgba(255, 255, 255, 0.2);
+   
+}
+#loginImg{
+    height: 550px;
+    width: 450px;
+}
+.loginLeft{
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    
+   
+ 
+
+
+
+@media (max-width: 1024px) {
+    .InnerBoxL {
+        width: 80%;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    
+    .loginRight, 
+    .loginLeft {
+        width: 100%;
+        height: auto;
+    }
+    
+    #loginImg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .InnerBoxL {
+        width: 90%;
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+    
+    .loginLeft {
+        padding: 20px;
+    }
+    
+    #LoginBtn {
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .InnerBoxL {
+        width: 95%;
+        flex-direction: column-reverse;
+    }
+    
+    .loginLeft {
+        padding: 15px;
+    }
+    
+    #LoginBtn {
+        height: 40px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,244 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #046d28;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    
+   
+}
+
+#info {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+#info h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.feat {
+    display: flex;
+    gap: 30px;
+}
+
+.feat h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.feat h3::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.feat h3:hover::after {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+#logoutBtn {
+    background-color: white;
+    color: #046d28;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    right: 90px;
+    transition: background-color 0.3s ease-in-out, color 0.3s;
+}
+
+#logoutBtn:hover {
+    background-color: #ffffff;
+    color: #03491d;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9f4;
+}
+
+
+.Box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+   background-color: #addfad;
+    color: white;
+    border-radius: 20px; 
+    margin: 25px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease;
+}
+
+
+.Boxleft {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.Boxleft h1 {
+    font-size: 2.5em;
+    font-weight: 600; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif; 
+    color: black;
+}
+
+#para {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #e8e8e8;
+    font-family: 'Arial', sans-serif; 
+}
+
+.Boxright {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Boxright #imgHome {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px; /* Rounded corners for the image */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* Larger shadow for depth */
+    object-fit: cover;
+}
+
+
+
+.box2, .box3, .box4, .box5 {
+    background-color: #e5f7e1;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box2 h2, .box3 h2, .box4 h2, .box5 h2 {
+    font-size: 1.8em;
+    color: #2c6e49;
+    margin-bottom: 10px;
+}
+
+#para {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+#naviBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  }
+  
+ 
+#naviBtn {
+    background-color: #00563B; 
+    color: #FFFFFF; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .menu-toggle{
+    display: none;
+}
+.sideBar{
+    position: absolute;
+    z-index: 1;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 350px;
+    bottom: 310px;
+}
+
+
+@media(max-width:480px){
+
+    .Box1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .Boxleft{
+       margin-top: 40px;
+       text-align: center;
+    }
+    .menu-toggle{
+        display: block;
+        position: relative;
+        right: 20px;
+    }
+#close{
+    position: relative;
+    left: 100px;
+}
+    .feat{
+        display: none;
+    }
+    #logoutBtn{
+        display: none;
+    }
+
+    .logBtnSideBar{
+        margin-top: 20px;
+        width: 100px;
+        
+    }
+    .sideBar{
+        position: absolute;
+        bottom: 550px;
+        left: 90px;
+    }
+}
+  
+ 
